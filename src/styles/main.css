@@ -1,0 +1,49 @@
+button {
+  margin: 2rem;
+  padding: 1rem 1.5rem;
+  color: white;
+  background-color: #25a3a3;
+  font-size: 1.2em;
+  letter-spacing: 1px;
+  border: none;
+  border-radius: 15px;
+  box-shadow: -2px 3px 3px 0 rgba(0, 0, 0, 0.5);
+}
+
+span.underline {
+  text-decoration: underline;
+}
+
+.align-left {
+  text-align: left;
+}
+
+.small-title {
+  text-transform: capitalize;
+  font-weight: 700;
+  font-size: 0.8em;
+}
+
+.metaData {
+  background-color: rgba(0, 0, 0, 0.2);
+  margin: 0 1rem;
+  border: 1px solid #555;
+}
+.metaData dl {
+  padding: 1.5rem 0;
+}
+.metaData dl div {
+  display: inline-block;
+  text-align: center;
+}
+.metaData dd, .metaData dt {
+  padding: 0.25rem 0;
+}
+.metaData dd {
+  margin: 0 1rem;
+}
+.metaData dt {
+  font-weight: 700;
+}
+
+/*# sourceMappingURL=main.css.map */
