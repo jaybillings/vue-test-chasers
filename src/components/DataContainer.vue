@@ -1,6 +1,6 @@
 <template>
   <div class="data-container">
-    <p class="align-left small-title">[<span class="underline">Advanced Options</span>]</p>
+    <p class="align-left small-title">[<span class="fake-link">Advanced Options</span>]</p>
     <div id="records">
       <div class="metaData">
         <dl>
@@ -20,7 +20,7 @@
           </div>
         </dl>
       </div>
-      <DataRow v-for="(row, index) in data" :key="index" :title="row.title" :text="row.content"/>
+      <DataRow v-for="(row, index) in data" :key="index" :title="row.title" :text="row.content" :links="row.links"/>
     </div>
   </div>
 </template>

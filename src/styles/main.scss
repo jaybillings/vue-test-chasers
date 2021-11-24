@@ -1,56 +1,102 @@
 @import "_vars";
 
+html {
+  overflow: hidden;
+}
+
+#app {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+  margin: 2rem 2rem 1rem;
+  font-size: 16px;
+}
+
 button {
-    margin: 2rem;
-    padding: 1rem 1.5rem;
+  margin: 2rem;
+  padding: 1rem 1.5rem;
 
-    color: white;
-    background-color: $primary;
-    font-size: 1.2em;
-    letter-spacing: 1px;
-    border: none;
-    border-radius: 15px;
+  color: white;
+  background-color: $primary;
+  font-size: 1.2em;
+  letter-spacing: 1px;
+  border: none;
+  border-radius: 15px;
 
-    box-shadow: -2px 3px 3px 0 rgba(0, 0, 0, 0.5);
+  box-shadow: -2px 3px 3px 0 rgba(0, 0, 0, 0.5);
 }
 
-span.underline {
-    text-decoration: underline;
-}
-
-.align-left {
+.data-container {
+  li {
+    display: inline-block;
     text-align: left;
-}
+    list-style-type: none;
+    margin: 1rem 0.5rem;
 
-.small-title {
-    text-transform: capitalize;
-    font-weight: 700;
-    font-size: 0.8em;
+    padding: 0.5rem 1rem;
+    border-radius: 15px;
+    border: 1px solid $secondaryDark;
+    background-color: $secondary;
+
+    &:hover {
+      background-color: $secondaryDark;
+
+      a {
+        text-decoration: underline;
+      }
+    }
+
+    a {
+      text-decoration: none;
+      color: black;
+    }
+  }
 }
 
 .metaData {
-    background-color: rgba(0,0,0,0.2);
+  background-color: rgba(0, 0, 0, 0.2);
+  margin: 0 1rem;
+  border: 1px solid #555;
+
+  dl {
+    padding: 1.5rem 0;
+
+    & div {
+      display: inline-block;
+      text-align: center;
+    }
+  }
+
+  dd, dt {
+    padding: 0.25rem 0;
+  }
+
+  dd {
     margin: 0 1rem;
-    border: 1px solid #555;
+  }
 
-    dl {
-        padding: 1.5rem 0;
+  dt {
+    font-weight: 700;
+  }
+}
 
-        & div {
-            display: inline-block;
-            text-align: center;
-        }
-    }
+.align-left {
+  text-align: left;
+}
 
-    dd, dt {
-        padding: 0.25rem 0;
-    }
+.small-title {
+  text-transform: capitalize;
+  font-weight: 700;
+  font-size: 0.8em;
+}
 
-    dd {
-        margin: 0 1rem;
-    }
+.fake-link {
+  text-decoration: underline;
+  cursor: pointer;
 
-    dt {
-        font-weight: 700;
-    }
+  &:hover {
+    color: $primary;
+  }
 }

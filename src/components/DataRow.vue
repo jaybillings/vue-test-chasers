@@ -2,12 +2,17 @@
   <div class="data-row">
     <h2>{{ title }}</h2>
     <p>{{ text }}</p>
+    <ul v-if="links">
+      <li v-for="(link, index) in links" :key="index">
+        <a target="_top" :href="link" :title="link">{{ link }}</a>
+      </li>
+    </ul>
   </div>
 </template>
 
 <script>
 export default {
-  props: ['title', 'text']
+  props: ['title', 'text', 'links']
 }
 </script>
 
